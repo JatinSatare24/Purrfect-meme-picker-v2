@@ -1,42 +1,39 @@
-# 🐈 Purrfect Meme Picker
+# 🐈 Purrfect Meme Picker: V2
+This is the refined version of the Purrfect Meme Picker. V2 focuses on solidifying the **HTML/CSS/JS connection** and ensuring the code follows professional naming conventions and logical structures.
+---
 
-A logical, filter-based web application designed to find the exact cat meme to match your current mood. This project was built to master **JavaScript Array Methods**, **Dynamic DOM Updates**, and **Radio Input handling**.
+## 🚀 Refined Features
+
+* **Logical Filtering:** Uses JavaScript to scan a data set and return specific memes based on user-selected moods.
+* **BEM Methodology:** Styled using **Block-Element-Modifier** syntax to keep the CSS organized and prevent specificity issues.
+* **Conditional Rendering:** A functional checkbox system that determines whether to display static images or animated GIFs.
+* **Dynamic DOM Updates:** Uses template literals and JS logic to inject the "Purrfect" meme into the modal in real-time.
 
 ---
 
-## 🚀 Key Features
+## 🛠️ The Technical "Machine"
 
-* **Mood Discovery:** Dynamically generates a list of unique mood categories from a data set.
-* **Animated Only Mode:** A functional toggle to filter results specifically for GIFs.
-* **Modal Overlay:** A custom-built UI component to spotlight the "Purrfect" meme.
-* **Responsive Layout:** Uses CSS Flexbox to ensure cat memes look great on any screen size.
+### 1. The Structure (HTML)
+* Used **Semantic HTML** to ensure the meme-picking interface is accessible and structured correctly.
+* Leveraged **Data Attributes** to link the HTML radio inputs to the JavaScript logic.
 
----
+### 2. The Style (CSS)
+* Implemented the **Box Model** with `border-box` to ensure perfect layout alignment.
+* Used **Flexbox** for a responsive, centered layout that works across different screen sizes.
+* Followed **BEM naming** (e.g., `.meme-modal__inner`) for a flat and readable stylesheet.
 
-## 🛠️ Tech Stack
-
-* **HTML5:** Semantic structure with a focus on form inputs and accessibility.
-* **CSS3:** Custom styling using the **BEM (Block Element Modifier)** naming convention and Flexbox.
-* **JavaScript (ES6+):**
-    * `.filter()` & `.includes()` for the search engine.
-    * `for...of` loops to iterate through data.
-    * `classList.toggle` for UI state changes.
-    * Template Literals for dynamic HTML injection.
-      
----
-
-## 🧠 Technical Deep Dive
-
-During the building of this "Machine," I solved several core logic puzzles:
-
-1.  **The Unique Category Logic:** Rather than hard-coding moods, the app scans the entire data object and extracts only unique tags to build the radio buttons.
-2.  **Data Attributes:** Leveraged `data-` attributes to create a clean bridge between the HTML UI and the JavaScript logic.
-3.  **Conditional Rendering:** Managed the logic to handle "Animated vs. Static" image display based on user preference.
+### 3. The Logic (JavaScript)
+* **Array Methods:** Used `.filter()` and `.includes()` to handle the search logic within the meme data.
+* **Event Listeners:** Managed user interactions through clean, non-intrusive event handling.
+* **Memory Management:** Handled data objects as **Reference Types** to ensure efficient processing in the Heap.
 
 ---
 
-## 🔧 Installation & Usage
+## 🧠 Why V2?
+This version serves as a "Final Review" of the core frontend fundamentals—Logic, Layout, and Structure—before progressing into Asynchronous JS and API integration.
+---
 
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/purrfect-meme-picker.git](https://github.com/YOUR_USERNAME/purrfect-meme-picker.git)
+## 🔧 How to Run
+1. Open `index.html` in any browser.
+2. Choose a mood.
+3. Click "Get Image" to see your meme!
